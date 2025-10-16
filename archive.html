@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archive | VSN Blog</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="navbar">
+  <div class="logo"><h1><a href="index.html">VSN Blog</a></h1></div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="archive.html" class="active">Archive</a>
+  </nav>
+</header>
+
+<section class="page-header">
+  <h2>🗃 Post Archive</h2>
+  <p>Browse all published posts in one place.</p>
+</section>
+
+<main id="archive-list" class="archive-grid"></main>
+
+<footer>
+  <p>© 2025 VSN Blog | visernic.com</p>
+</footer>
+
+<script>
+fetch("posts.json")
+  .then(res => res.json())
+  .then(posts => {
+    const container = document.getElementById("archive-list");
+    posts.reverse().forEach(p => {
+      const div = document.createElement("div");
+      const randomViews = Math.floor(Math.random()*900+100);
+      const randomStars = (Math.random()*1+4).toFixed(1);
+      div.className = "archive-item";
+      div.innerHTML = `
+        <a href="${p.link}">${p.title}</a>
+        <small>${new Date(p.date).toLocaleDateString()}</small>
+        <p>👁 ${randomViews} views • ⭐ ${randomStars}</p>
+      `;
+      container.appendChild(div);
+    });
+  });
+</script>
+</body>
+</html>
