@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categories | VSN Blog</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="navbar">
+  <div class="logo"><h1><a href="index.html">VSN Blog</a></h1></div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="categories.html" class="active">Categories</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-header">
+  <h2>📂 Categories</h2>
+  <p>Browse posts by topics you love.</p>
+</section>
+
+<section id="category-list" class="category-grid"></section>
+
+<footer>
+  <p>© 2025 VSN Blog | visernic.com</p>
+</footer>
+
+<script>
+fetch("posts.json")
+  .then(res => res.json())
+  .then(posts => {
+    const cats = {};
+    posts.forEach(p => { cats[p.category] = (cats[p.category] || 0) + 1; });
+    const container = document.getElementById("category-list");
+    Object.keys(cats).forEach(cat => {
+      const div = document.createElement("div");
+      div.className = "category-card";
+      div.innerHTML = `<h3>${cat}</h3><p>${cats[cat]} posts</p>`;
+      container.appendChild(div);
+    });
+  });
+</script>
+</body>
+</html>
