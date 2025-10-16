@@ -1,0 +1,82 @@
+[
+  {
+    "title": "1. How to Build a Blog with GitHub Pages",
+    "description": "Step-by-step guide to create a free blog on GitHub Pages using HTML, CSS, and JS.",
+    "image": "assets/images/post1-banner.jpg",
+    "link": "posts/post1.html",
+    "category": "Web Development",
+    "date": "2025-10-01"
+  },
+  {
+    "title": "2. 10 Best SEO Tips for Static Blogs",
+    "description": "Learn how to boost SEO for your static HTML blog hosted on GitHub Pages.",
+    "image": "assets/images/post2-banner.jpg",
+    "link": "posts/post2.html",
+    "category": "SEO",
+    "date": "2025-10-03"
+  },
+  {
+    "title": "3. How to Add Dark Mode to Your Website",
+    "description": "Add a modern dark mode toggle using CSS variables and JavaScript.",
+    "image": "assets/images/post3-banner.jpg",
+    "link": "posts/post3.html",
+    "category": "Frontend",
+    "date": "2025-10-04"
+  },
+  {
+    "title": "4. Setting Up a Custom Domain on GitHub Pages",
+    "description": "Learn how to connect visernic.com or any custom domain to GitHub Pages.",
+    "image": "assets/images/post4-banner.jpg",
+    "link": "posts/post4.html",
+    "category": "Hosting",
+    "date": "2025-10-06"
+  },
+  {
+    "title": "5. Best Free Icons and Fonts for Web Designers",
+    "description": "Top free resources for developers: fonts, icons, and UI kits for your blog.",
+    "image": "assets/images/post5-banner.jpg",
+    "link": "posts/post5.html",
+    "category": "Design",
+    "date": "2025-10-07"
+  },
+  {
+    "title": "6. Markdown to HTML: Convert and Use Easily",
+    "description": "How to write your posts in Markdown and auto-convert them to HTML.",
+    "image": "assets/images/post6-banner.jpg",
+    "link": "posts/post6.html",
+    "category": "Tools",
+    "date": "2025-10-08"
+  },
+  {
+    "title": "7. Improve Page Speed for SEO",
+    "description": "Learn how to optimize loading speed using compression, minify, and lazy load.",
+    "image": "assets/images/post7-banner.jpg",
+    "link": "posts/post7.html",
+    "category": "SEO",
+    "date": "2025-10-09"
+  },
+  {
+    "title": "8. Add Contact Form Without Backend (Formspree)",
+    "description": "Setup a working contact form without writing backend code.",
+    "image": "assets/images/post8-banner.jpg",
+    "link": "posts/post8.html",
+    "category": "Integration",
+    "date": "2025-10-10"
+  },
+  {
+    "title": "9. How to Use Google Analytics in Your Blog",
+    "description": "Step-by-step guide to add Google Analytics tracking to your site.",
+    "image": "assets/images/post9-banner.jpg",
+    "link": "posts/post9.html",
+    "category": "Analytics",
+    "date": "2025-10-12"
+  },
+  {
+    "title": "10. Deploying a Portfolio Website on GitHub Pages",
+    "description": "Turn your resume and projects into a live portfolio website for free.",
+    "image": "assets/images/post10-banner.jpg",
+    "link": "posts/post10.html",
+    "category": "Portfolio",
+    "date": "2025-10-14"
+  }
+]
