@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How to Build a Blog with GitHub Pages | VSN Blog</title>
+  <meta name="description" content="Full step-by-step guide to create and host a static blog using GitHub Pages and custom domain visernic.com.">
+  <meta name="keywords" content="GitHub Pages, blog tutorial, static site, visernic, Md Mostafa Niloy, VSN Blog">
+  <meta property="og:title" content="How to Build a Blog with GitHub Pages | VSN Blog">
+  <meta property="og:image" content="assets/images/post1-banner.jpg">
+  <meta property="og:url" content="posts/post1.html">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="../index.html" style="color:white;">VSN Blog</a></h1>
+  </header>
+
+  <main class="post">
+    <h2>How to Build a Blog with GitHub Pages</h2>
+    <p><em>By Md Mostafa Niloy | 16 Oct 2025</em></p>
+    <img src="../assets/images/post1-banner.jpg" alt="GitHub Pages Blog" style="width:100%; border-radius:10px; margin:20px 0;">
+
+    <h3>🧩 Step 1: Create Your Repository</h3>
+    <p>First, go to <a href="https://github.com" target="_blank">GitHub</a> and create a new repository named <strong>vsn-blog</strong>.  
+    Make sure it’s public, then click on “Create Repository”.</p>
+
+    <h3>⚙️ Step 2: Upload Your Blog Files</h3>
+    <p>Push your blog’s files (HTML, CSS, JS, images) into the repo.  
+    You can use the GitHub web upload feature or Git CLI:</p>
+
+```bash
+git init
+git add .
+git commit -m "Initial blog setup"
+git branch -M main
+git remote add origin https://github.com/md-mostafa-niloy/vsn-blog.git
+git push -u origin main
